@@ -127,11 +127,11 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>.\Release\</OutDir>
     <IntDir>.\Release\</IntDir>
-    <LinkIncremental>false</LinkIncremental>
+    <LinkIncremental>true</LinkIncremental>
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LinkIncremental>false</LinkIncremental>
+    <LinkIncremental>true</LinkIncremental>
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugU|Win32'">
@@ -159,11 +159,11 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseU|Win32'">
     <OutDir>.\ReleaseU\</OutDir>
     <IntDir>.\ReleaseU\</IntDir>
-    <LinkIncremental>false</LinkIncremental>
+    <LinkIncremental>true</LinkIncremental>
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseU|x64'">
-    <LinkIncremental>false</LinkIncremental>
+    <LinkIncremental>true</LinkIncremental>
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -204,7 +204,6 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <LinkDLL>true</LinkDLL>
       <SubSystem>Console</SubSystem>
-      <OutputFile>C:\Program Files\7-ZIP\7-Zip.dll</OutputFile>
       <ImportLibrary>.\Release\7-Zip.lib</ImportLibrary>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;comctl32.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>.\Explorer.def</ModuleDefinitionFile>
@@ -247,7 +246,6 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <LinkDLL>true</LinkDLL>
       <SubSystem>Console</SubSystem>
-      <OutputFile>C:\Program Files\7-ZIP\7-Zip.dll</OutputFile>
       <ImportLibrary>.\Release\7-Zip.lib</ImportLibrary>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;comctl32.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>.\Explorer.def</ModuleDefinitionFile>
@@ -339,7 +337,6 @@
       <LinkDLL>true</LinkDLL>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <OutputFile>C:\Program Files\7-ZIP\7-Zip.dll</OutputFile>
       <ImportLibrary>.\DebugU\7-Zip.lib</ImportLibrary>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;comctl32.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>.\Explorer.def</ModuleDefinitionFile>
@@ -473,7 +470,6 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <LinkDLL>true</LinkDLL>
       <SubSystem>Console</SubSystem>
-      <OutputFile>C:\Program Files\7-ZIP\7-Zipn.dll</OutputFile>
       <ImportLibrary>.\ReleaseU\7-Zipn.lib</ImportLibrary>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;comctl32.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>.\Explorer.def</ModuleDefinitionFile>
@@ -516,7 +512,6 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <LinkDLL>true</LinkDLL>
       <SubSystem>Console</SubSystem>
-      <OutputFile>C:\Program Files\7-ZIP\7-Zipn.dll</OutputFile>
       <ImportLibrary>.\ReleaseU\7-Zipn.lib</ImportLibrary>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;comctl32.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>.\Explorer.def</ModuleDefinitionFile>
